@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name "AnalogueWallClockMirrorFootprintsLibrary")(type "KiCad")(uri "${KIPRJMOD}/AnalogueWallClockMirrorFootprintsLibrary.pretty")(options "")(descr "DO NOT USE. For Reverse Hand Solder Only"))
+)

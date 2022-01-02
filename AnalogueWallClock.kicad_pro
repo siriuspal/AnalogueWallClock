@@ -218,7 +218,7 @@
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
-      "lib_symbol_issues": "warning",
+      "lib_symbol_issues": "ignore",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -298,7 +298,10 @@
           "/LED Driver/B3",
           "/LED Driver/B4",
           "/LED Driver/B5",
-          "/LED Driver/B6"
+          "/LED Driver/B6",
+          "/LED Driver/B7",
+          "/LED Driver/B8",
+          "/LED Driver/B9"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(33, 150, 243)",
@@ -349,7 +352,10 @@
           "/LED Driver/G3",
           "/LED Driver/G4",
           "/LED Driver/G5",
-          "/LED Driver/G6"
+          "/LED Driver/G6",
+          "/LED Driver/G7",
+          "/LED Driver/G8",
+          "/LED Driver/G9"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(76, 175, 80)",
@@ -375,7 +381,10 @@
           "/LED Driver/R3",
           "/LED Driver/R4",
           "/LED Driver/R5",
-          "/LED Driver/R6"
+          "/LED Driver/R6",
+          "/LED Driver/R7",
+          "/LED Driver/R8",
+          "/LED Driver/R9"
         ],
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(244, 67, 54)",

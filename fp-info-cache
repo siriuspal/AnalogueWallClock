@@ -1,4 +1,4 @@
-19823746451482971
+19831952038360056
 AnalogueWallClockMirrorFootprintsLibrary
 19-337C_RSBHGHC-A88_4T_Cutout
 
@@ -55699,6 +55699,20 @@ solder jumper open
 5
 3
 LED_SMD
+156120M173000
+WL-SFRW SMT FULL-COLOR REVERSE M
+
+0
+4
+4
+LED_SMD
+APTF3216QBDZGSURKC
+LED RGB CLEAR SMD
+
+0
+12
+6
+LED_SMD
 LED-APA102-2020
 http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf
 LED RGB SPI
@@ -56188,6 +56202,20 @@ LED
 0
 2
 2
+LED_SMD
+QBLP677R-RGB
+LED RGB DIFF 4PLCC SMD BOTTOM
+
+0
+4
+4
+LED_SMD
+XZMDKCBDDG45S-9
+LED RGB CLEAR 4PLCC SMD
+
+0
+4
+4
 LED_THT
 LED_BL-FL7680RGB
 'Piranha' RGB LED, through hole, common anode, 7.62x7.62mm, BGRA pin order, https://cdn-shop.adafruit.com/datasheets/BL-FL7680RGB.pdf
@@ -59907,11 +59935,11 @@ Fiberoptic Reciver RX Toshiba Toslink TORX170 TORX173 TORX193 TORX194
 6
 OptoDevice
 VEML7700
+SENSOR OPT 545NM AMBIENT 4SMD
 
-
 0
-0
-0
+4
+4
 OptoDevice
 Vishay_CAST-3Pin
 IR Receiver Vishay TSOP-xxxx, CAST package, see https://www.vishay.com/docs/82493/tsop311.pdf
@@ -64307,6 +64335,13 @@ QFN, 76 Pin (https://www.marvell.com/documents/bqcwxsoiqfjkcjdjhkvc/#page=19), g
 QFN NoLead
 0
 103
+77
+Package_DFN_QFN
+QFN-76_EP_9.1x9.1_Pitch0.4mm
+
+
+0
+124
 77
 Package_DFN_QFN
 Qorvo_DFN-8-1EP_2x2mm_P0.5mm

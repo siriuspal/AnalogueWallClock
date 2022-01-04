@@ -2,26 +2,152 @@
   "board": {
     "design_settings": {
       "defaults": {
-        "board_outline_line_width": 0.1,
-        "copper_line_width": 0.2,
+        "board_outline_line_width": 0.09999999999999999,
+        "copper_line_width": 0.19999999999999998,
+        "copper_text_italic": false,
         "copper_text_size_h": 1.5,
         "copper_text_size_v": 1.5,
         "copper_text_thickness": 0.3,
+        "copper_text_upright": false,
+        "courtyard_line_width": 0.049999999999999996,
+        "dimension_precision": 4,
+        "dimension_units": 3,
+        "dimensions": {
+          "arrow_length": 1270000,
+          "extension_offset": 500000,
+          "keep_text_aligned": true,
+          "suppress_zeroes": false,
+          "text_position": 0,
+          "units_format": 1
+        },
+        "fab_line_width": 0.09999999999999999,
+        "fab_text_italic": false,
+        "fab_text_size_h": 1.0,
+        "fab_text_size_v": 1.0,
+        "fab_text_thickness": 0.15,
+        "fab_text_upright": false,
         "other_line_width": 0.15,
+        "other_text_italic": false,
+        "other_text_size_h": 1.0,
+        "other_text_size_v": 1.0,
+        "other_text_thickness": 0.15,
+        "other_text_upright": false,
+        "pads": {
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
+        },
         "silk_line_width": 0.15,
+        "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15
+        "silk_text_thickness": 0.15,
+        "silk_text_upright": false,
+        "zones": {
+          "45_degree_only": false,
+          "min_clearance": 0.508
+        }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [],
-      "rules": {
-        "min_copper_edge_clearance": 0.0,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0
+      "meta": {
+        "version": 2
       },
-      "track_widths": [],
-      "via_dimensions": []
+      "rule_severities": {
+        "annular_width": "warning",
+        "clearance": "warning",
+        "copper_edge_clearance": "warning",
+        "courtyards_overlap": "warning",
+        "diff_pair_gap_out_of_range": "warning",
+        "diff_pair_uncoupled_length_too_long": "warning",
+        "drill_out_of_range": "warning",
+        "duplicate_footprints": "warning",
+        "extra_footprint": "warning",
+        "footprint_type_mismatch": "warning",
+        "hole_clearance": "warning",
+        "hole_near_hole": "warning",
+        "invalid_outline": "warning",
+        "item_on_disabled_layer": "warning",
+        "items_not_allowed": "warning",
+        "length_out_of_range": "warning",
+        "malformed_courtyard": "warning",
+        "microvia_drill_out_of_range": "warning",
+        "missing_courtyard": "warning",
+        "missing_footprint": "warning",
+        "net_conflict": "warning",
+        "npth_inside_courtyard": "warning",
+        "padstack": "warning",
+        "pth_inside_courtyard": "warning",
+        "shorting_items": "warning",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
+        "skew_out_of_range": "warning",
+        "through_hole_pad_without_hole": "warning",
+        "too_many_vias": "warning",
+        "track_dangling": "warning",
+        "track_width": "warning",
+        "tracks_crossing": "warning",
+        "unconnected_items": "warning",
+        "unresolved_variable": "warning",
+        "via_dangling": "warning",
+        "zone_has_empty_net": "warning",
+        "zones_intersect": "warning"
+      },
+      "rules": {
+        "allow_blind_buried_vias": false,
+        "allow_microvias": false,
+        "max_error": 0.005,
+        "min_clearance": 0.0,
+        "min_copper_edge_clearance": 0.0,
+        "min_hole_clearance": 0.0,
+        "min_hole_to_hole": 0.25,
+        "min_microvia_diameter": 0.19999999999999998,
+        "min_microvia_drill": 0.09999999999999999,
+        "min_silk_clearance": 0.0,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.09999999999999999,
+        "min_via_annular_width": 0.049999999999999996,
+        "min_via_diameter": 0.39999999999999997,
+        "solder_mask_clearance": 0.0,
+        "solder_mask_min_width": 0.0,
+        "use_height_for_length_calcs": true
+      },
+      "track_widths": [
+        0.0,
+        0.15,
+        0.2,
+        0.25,
+        0.4,
+        0.5,
+        0.75,
+        1.0
+      ],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        },
+        {
+          "diameter": 0.9,
+          "drill": 0.35
+        },
+        {
+          "diameter": 1.25,
+          "drill": 0.5
+        },
+        {
+          "diameter": 1.65,
+          "drill": 0.65
+        }
+      ],
+      "zones_allow_external_fillets": false,
+      "zones_use_no_outline": true
     },
     "layer_presets": []
   },
@@ -246,7 +372,7 @@
     "classes": [
       {
         "bus_width": 12.0,
-        "clearance": 0.2,
+        "clearance": 0.1,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -256,182 +382,10 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
+        "track_width": 0.1,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "+5V",
-        "nets": [
-          "+5V"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 10.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "BlueLED",
-        "nets": [
-          "/LED Driver/B0",
-          "/LED Driver/B1",
-          "/LED Driver/B2",
-          "/LED Driver/B3",
-          "/LED Driver/B4",
-          "/LED Driver/B5",
-          "/LED Driver/B6",
-          "/LED Driver/B7",
-          "/LED Driver/B8",
-          "/LED Driver/B9"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(33, 150, 243)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "Cathode",
-        "nets": [
-          "/LED Driver/L0",
-          "/LED Driver/L1",
-          "/LED Driver/L2",
-          "/LED Driver/L3",
-          "/LED Driver/L4",
-          "/LED Driver/L5"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(158, 158, 158)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "GreenLED",
-        "nets": [
-          "/LED Driver/G0",
-          "/LED Driver/G1",
-          "/LED Driver/G2",
-          "/LED Driver/G3",
-          "/LED Driver/G4",
-          "/LED Driver/G5",
-          "/LED Driver/G6",
-          "/LED Driver/G7",
-          "/LED Driver/G8",
-          "/LED Driver/G9"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(76, 175, 80)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "RedLED",
-        "nets": [
-          "/LED Driver/R0",
-          "/LED Driver/R1",
-          "/LED Driver/R2",
-          "/LED Driver/R3",
-          "/LED Driver/R4",
-          "/LED Driver/R5",
-          "/LED Driver/R6",
-          "/LED Driver/R7",
-          "/LED Driver/R8",
-          "/LED Driver/R9"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(244, 67, 54)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "VDD_VRED",
-        "nets": [
-          "VDD"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(255, 87, 34)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 10.0
-      },
-      {
-        "bus_width": 12.0,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "VGRN_VBLU",
-        "nets": [
-          "VEE"
-        ],
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgb(0, 188, 212)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 10.0
       }
     ],
     "meta": {
@@ -498,14 +452,6 @@
     [
       "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55",
       ""
-    ],
-    [
-      "250f9fa2-a2de-4123-b6e9-f55c7f005e9d",
-      "Power & Control"
-    ],
-    [
-      "bd0a21f6-e6fe-4442-bc64-16496f5c9b30",
-      "LED Driver"
     ]
   ],
   "text_variables": {
